@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  hsl(212, 23%, 69%);
+
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.image{
+    display: flex;
+    flex: 1;
+}
+
+.summary{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color:hsl(217, 19%, 35%)
+}
+
+p{
+    color:hsl(214, 17%, 51%) ;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem; /* Adds spacing between child elements */
+    padding: 1rem; /* Adds internal spacing inside the profile container */
+     /* Optional: light background for contrast */
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .profile-text h3 {
+    margin: 0;
+    font-size: 1rem;
+    flex: 1;
+  }
+  
+  .profile-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: gray;
+  }
+  
+  #share-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%); 
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  #share-btn:hover {
+    background-color: hsl(210, 46%, 95%) ;
+  }
+
+  .share-container {
+    position: relative;
+    
+  }
+  
+  .share-options {
+    display: none; /* ✅ Hides it by default */
+    position: absolute;
+    /* visibility:hidden; */
+    top: 40px;
+    right: 0;
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .share-options.show {
+    display: flex; /* ✅ Only when toggled on */
+  }
+  
+  .share-options img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .share-options img:hover {
+    transform: scale(1.2);
+  }
+  
